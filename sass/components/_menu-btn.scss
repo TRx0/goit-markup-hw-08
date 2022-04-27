@@ -1,0 +1,34 @@
+.menu-btn{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    z-index: 99;
+   
+    @media  screen and(min-width: 768px){
+        display: none;
+    }
+    
+    &__icon{
+        width: 40px;
+        height: 40px;
+
+        &-open {
+            opacity: 1;
+            
+            
+        }
+        &-close {
+            opacity: 0;
+        }
+    }
+}
+.menu-btn.is-active .menu-btn__icon-open{
+    opacity: 0;
+}
+.menu-btn.is-active .menu-btn__icon-close{
+    opacity: 1;
+}

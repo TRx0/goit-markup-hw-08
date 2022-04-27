@@ -1,0 +1,45 @@
+.hero {
+    background-color: #2f303a;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    @include mq(desktop){
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero_sm.png);
+    @include mq(retina){
+      background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero_sm@2x.png);
+    }
+   @include mq(tablet){
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero_md.png);
+    @include mq(retina){
+      background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero_md@2x.png);
+    }
+   }
+   @include mq(desktop){
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero_lg.jpg);
+    @include mq(retina){
+      background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero_lg@2x.jpg);
+    }
+   }
+  }
+  
+  .hero__text {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+    @include mq(desktop){
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
