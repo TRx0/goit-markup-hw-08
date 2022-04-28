@@ -3,6 +3,7 @@
     @include mq(tablet-only){
       display: flex;
       flex-wrap: wrap;
+      gap: 30px;
     }
     @include mq(desktop){
       display: flex;
@@ -21,17 +22,17 @@
     width: 100%;
     @include mq(tablet){
       width: 354px;
-      
+    }
+    @include mq(desktop){
+      width: 270px;
     }
   }
-  .advantages__examples:nth-child(odd){
-    margin-right: 30px;
-  }
+ 
   
   .advantages__examples:not(:last-child){
     @include mq(desktop){
     margin-right: 30px;
-    margin-bottom: 30px;
+    
     }
     @include mq(mobile-only){
       margin-right: 30px;

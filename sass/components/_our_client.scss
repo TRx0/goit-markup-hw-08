@@ -57,9 +57,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
- 
+  margin: -15px;
+ @include mq(mobile-only){
+  
+ }
 
-@include mq(tablet){
+  @include mq(tablet){
   max-width: 738px;
 }
 
@@ -75,18 +78,21 @@
 .client__item{
   width: calc((100% / 2 - 2 * 15px));
   margin: 15px;
-  max-width: 210px;
   @include mq(tablet){
     width: calc((100% / 3 - 2 * 15px));
-    max-width: 226px;
+    
   }
   
   @include mq(desktop){
     margin: 0;
-    margin-right: 30px;
+   
   }
 }
-  
+.client__item:not(:last-child){
+@include mq(desktop){
+  margin-right: 30px;
+}
+}
 
 
 
